@@ -4,6 +4,7 @@ Vagrant example for a simple LAMP-Stack (http://en.wikipedia.org/wiki/LAMP_%28so
 To get more information about vagrant visit http://vagrantup.com/
 
 The example contains:
+
  * Ubuntu 14.04 Server
  * PHP
  * Java, Tomcat, mod_jk
@@ -12,6 +13,7 @@ The example contains:
 ## Requirements 
 
 Please install the following requirements for your operating system:
+
  * VirtualBox 4.3.28+  (http://virtualbox.org) 
  * Vagrant 1.7.2+ (http://vagrantup.com) 
  * Windows: git-scm (http://git-scm.com/)
@@ -35,6 +37,6 @@ cd PATH/TO/THIS/DIR
 vagrant destroy
 vagrant up
 ```
- - To turn off the VB: ```vagrant halt```
- - To navigate into VB (via ssh): ```vagrant ssh```
+ * To turn off the VB: ```vagrant halt```
+ * To navigate into VB (via ssh): ```vagrant ssh```
 
