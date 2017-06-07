@@ -37,7 +37,7 @@ chown -R vagrant:vagrant /home/vagrant/public_html
 ### activate apache conf
 #a2ensite myapp.conf
 ### add tomcat instance under /home/vagrant/tomcat
-#su vagrant -c "cd ~/ && tomcat7-instance-create tomcat"
+#su vagrant -c "cd ~/ && tomcat8-instance-create tomcat"
 ### change tomcatconfig
 #cp /vagrant/config/files/tomcat/server.xml tomcat/conf/server.xml
 #sed -i -e 's/JAVA_OPTS="-Djava.awt.headless=true -Xmx128M"/JAVA_OPTS="-Djava.awt.headless=true -Xmx512M"/' /home/vagrant/tomcat/bin/setenv.sh
@@ -50,21 +50,6 @@ chown -R vagrant:vagrant /home/vagrant/public_html
 ### start tomcat
 #su vagrant -c "cd ~/tomcat && ./bin/startup.sh"
 ### for troubleshooting read tomcat logs under /home/vagrant/tomcat/logs
-
-## use this for python web (!) applications
-### add apache config
-#cp /vagrant/config/files/apache/mypythonwebapp.conf /etc/apache2/sites-available/myapp.conf
-### activate apache conf
-#a2ensite myapp.conf
-### create python virtualenv environment
-#su vagrant -c "cd ~/ && mkdir -p ~/wsgi/env && cd ~/wsgi/env && virtualenv --no-site-packages ."
-### copy application files 
-#cp /vagrant_data/example/python/script.wsgi /home/vagrant/wsgi/env/script.wsgi
-#mkdir /home/vagrant/wsgi/env/myapp/
-### set rights
-#chown vagrant:vagrant /home/vagrant/wsgi/env/script.wsgi
-#chmod +x /home/vagrant/wsgi/env/script.wsgi
-#chown -R vagrant:vagrant /home/vagrant/wsgi/env/myapp
 
 
 

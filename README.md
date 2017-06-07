@@ -5,27 +5,21 @@ To get more information about vagrant visit http://vagrantup.com/
 
 The example contains:
 
- * Ubuntu 14.04 Server
+ * Ubuntu 16.04 Server
  * PHP
  * Java, Tomcat, mod_jk
- * Python, mod_wsgi
 
 ## Requirements 
 
 Please install the following requirements for your operating system:
 
- * VirtualBox 4.3.28+  (http://virtualbox.org) 
- * Vagrant 1.7.2+ (http://vagrantup.com) 
+ * VirtualBox 5.1.22+  (http://virtualbox.org) 
+ * Vagrant 1.9.5+ (http://vagrantup.com) 
  * Windows: git-scm (http://git-scm.com/)
 
-## Getting started
- * Start VM: 
-```
-cd PATH/TO/THIS/DIR
-vagrant up
-```
-   Note: the first run of this command downloads a basic virtual box (VB) and installs within VB all dependencies you need to run your project ("provisionising"). It can take long in the first run.
- * Open Browser in your host: http://localhost:8080
+## Getting started guide
+
+see [GettingStarted.md](https://github.com/kwies/vagrant-examples/blob/master/GettingStarted.md)
 
 ## Customization
  * Customize install script (THISDIR/config/shell/custom.sh)

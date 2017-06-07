@@ -17,10 +17,9 @@ echo ""
 
 DEPENDENCIES_BASE="curl zip bzip2 vim lynx ntp git subversion git-svn"
 DEPENDENCIES_APACHE="apache2"
-DEPENDENCIES_PHP="php5 php5-mysql php5-curl php5-gd php5-mcrypt"
-DEPENDENCIES_PYTHON="python python-matplotlib python-pygraphviz python-pip python-virtualenv libapache2-mod-wsgi"
-DEPENDENCIES_JAVA="openjdk-6-jdk"
-DEPENDENCIES_TOMCAT="tomcat7-user libapache2-mod-jk"
+DEPENDENCIES_PHP="php7.0 php7.0-mysql php7.0-curl php7.0-gd php7.0-mcrypt"
+DEPENDENCIES_JAVA="openjdk-8-jdk"
+DEPENDENCIES_TOMCAT="tomcat8-user libapache2-mod-jk"
 DEPENDENCIES_MYSQL="mysql-server phpmyadmin"
 
 
@@ -48,7 +47,7 @@ echo "update.."
 sudo apt-get update
 
 echo "install dependencies..."
-apt-get install -y $DEPENDENCIES_BASE $DEPENDENCIES_APACHE $DEPENDENCIES_PHP $DEPENDENCIES_PYTHON $DEPENDENCIES_JAVA $DEPENDENCIES_TOMCAT $DEPENDENCIES_MYSQL
+apt-get install -y $DEPENDENCIES_BASE $DEPENDENCIES_APACHE $DEPENDENCIES_PHP $DEPENDENCIES_JAVA $DEPENDENCIES_TOMCAT $DEPENDENCIES_MYSQL
 
 echo "various settings..."
 usermod -a -G adm vagrant
